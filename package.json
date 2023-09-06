@@ -1,0 +1,22 @@
+{
+  "name": "discord-bot-ensisa-remake",
+  "version": "1.0.0",
+  "description": "Bot Discord Promo 2022 ENSISA",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Baptiste Wetterwald",
+  "license": "ISC",
+  "dependencies": {
+    "blagues-api": "^2.1.1",
+    "canvas": "^2.11.2",
+    "canvas-gif": "^1.0.3",
+    "cheerio": "^1.0.0-rc.12",
+    "cron": "^2.3.1",
+    "discord.js": "^14.11.0",
+    "dom-parser": "^0.1.6",
+    "node-fetch": "^3.3.1",
+    "sqlite3": "^5.1.6"
+  }
+}
