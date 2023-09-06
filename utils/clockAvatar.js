@@ -9,7 +9,7 @@ async function setClockAvatar(client){
     let canvas = createCanvas(128, 128);
     let ctx = canvas.getContext('2d');
 
-    let avatar = await loadImage('./images/mehmett.jpg');
+    let avatar = await loadImage('./images/avatar.jpg');
 
     // make the avatar a circle
     ctx.beginPath();
