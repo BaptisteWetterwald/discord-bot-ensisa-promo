@@ -1,5 +1,7 @@
 const { Events } = require('discord.js');
 
+const { fetchMenuGeneral } = require('../commands/ensisa/menu');
+
 module.exports = {
 	name: Events.ClientReady,
 	once: true,
