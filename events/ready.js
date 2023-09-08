@@ -12,6 +12,5 @@ module.exports = {
 			activities: [{ name: "/help" }],
 			status: "online",
 		});
-
 	},
 };

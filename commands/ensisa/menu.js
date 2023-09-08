@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const cheerio = require('cheerio');
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
-const { menuChannel } = require('../../ids/channels-id.json');
+const { menuChannels } = require('../../ids/channels-id.json');
 const { getColor } = require('../../utils/randomColor.js');
 
 module.exports = {
@@ -121,5 +121,7 @@ function getMenuEmbed(menus, meatOrigin){
 }
 
 function fetchMenuGeneral(client){
-	fetchMenu(null, client.channels.cache.get(menuChannel));
+	menuChannels.forEach((channel) => {
+		fetchMenu(null, client.channels.cache.get(channel));
+	});
 }
